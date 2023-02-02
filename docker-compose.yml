@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  web:
+    build: .
+    environment:
+      - NEXT_PUBLIC_API_URL=https://api.poly-career.me/api/
+    ports:
+      - "80:3000"
+    volumes:
+      - ./webvolumn/modules:/node_modules

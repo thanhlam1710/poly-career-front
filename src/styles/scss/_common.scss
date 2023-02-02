@@ -1,0 +1,59 @@
+// common css here
+.modal-cv {
+  &__title {
+    line-height: 3rem;
+  }
+  .ant-modal-content {
+    border-radius: 0.5rem;
+    .ant-modal-header {
+      margin: 0 4rem;
+      padding: 4rem 0px 2rem 0;
+      border-bottom: 1px solid $grey-color;
+      .modal-cv__title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        .title__primary {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .ant-modal-body {
+      margin: 0 4rem;
+      .upload-cv {
+        max-width: 50rem;
+        height: 20rem;
+        margin: 2rem auto;
+      }
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      .input-editor__cv {
+        border-radius: 0.5rem;
+        border: 2px solid $grey-color;
+        min-height: 19rem;
+        .public-DraftEditor-content {
+          min-height: 14rem;
+        }
+      }
+
+      .form-control__submit {
+        text-align: right;
+        margin-top: 3rem;
+        .ant-btn {
+          width: 15rem;
+          height: 4.8rem;
+          &:first-child {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+
+    .ant-modal-footer {
+      padding: 1.5rem;
+    }
+  }
+}

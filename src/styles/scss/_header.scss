@@ -1,0 +1,133 @@
+.nav-notification {
+  width: 31rem;
+  &__header {
+    padding: 1.4rem;
+    border-bottom: 1px solid #e6ebf1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ant-btn {
+      border: none;
+    }
+    .ant-btn-sm {
+      height: 36px;
+      padding: 6.5px 1rem;
+      font-size: 14px;
+    }
+  }
+
+  &__body {
+    max-height: 35rem;
+    overflow-y: auto;
+    .ant-avatar {
+      width: 4rem;
+      height: 4rem;
+    }
+    .text-gray-light {
+      color: #72849a;
+      font-size: 1.4rem;
+    }
+    .ant-avatar-info {
+      background: rgba(62, 121, 247, 0.1);
+      color: #3e79f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-avatar-danger {
+      background: rgba(255, 107, 114, 0.1);
+      color: #ff6b72;
+    }
+  }
+
+  &__footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #e6ebf1;
+  }
+}
+.nav {
+  .ant-avatar {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.nav-dropdown {
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+  border-radius: 0.625rem;
+}
+
+.nav-profile {
+  width: 30rem;
+  border-radius: 1rem;
+  .pl-3 {
+    padding-left: 1.6rem;
+  }
+  .d-flex {
+    display: flex;
+  }
+  &__header {
+    padding: 1.1rem 1.6rem;
+    border-bottom: 1px solid #e6ebf1;
+  }
+
+  &__body {
+    border-radius: 1rem;
+    padding: 1rem;
+    .ant-dropdown-menu {
+      border-radius: 1rem;
+      box-shadow: none;
+      &-item {
+        height: 3.5rem;
+        line-height: 3.5rem;
+        padding: 2.2rem 1.2rem;
+      }
+    }
+
+    .mr-3 {
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+.app-container {
+  .side-nav {
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%);
+    z-index: 999;
+    direction: ltr;
+    background-color: #fff;
+    .ant-menu-item-group-title {
+      padding: 12px 24px;
+      color: rgba(26, 51, 83, 0.6);
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 15px;
+    }
+  }
+}
+
+.nav-close .anticon {
+  padding: 0.625rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-menu {
+  .ant-menu-item-group-title {
+    padding: 12px 24px;
+    color: rgba(26, 51, 83, 0.6);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

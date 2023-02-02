@@ -1,0 +1,171 @@
+.ant-dropdown-menu-item {
+  padding: 1rem;
+  color: $primary-text;
+  font-size: 1.6rem;
+}
+
+.ant-dropdown-menu {
+  box-shadow: $shadow-dropdown-color;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.ant-dropdown-menu-item .ant-dropdown-menu-item-icon {
+  font-size: 2.4rem;
+}
+
+.ant-dropdown-menu-title-content a {
+  transition: none;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.ant-dropdown {
+  width: fit-content;
+}
+
+.nav-main {
+  width: 25rem;
+  padding: 1rem 0;
+}
+
+.nav-other {
+  width: 19rem;
+  padding: 1rem 0;
+}
+
+.ant-form-item {
+  margin: 0;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected:after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover:after {
+  border-bottom: 0px solid #1890ff;
+}
+
+.ant-select-selector {
+  border: 1px solid $primary-color;
+  color: $text-blur;
+  display: flex;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.ant-steps-item-active .ant-steps-item-icon {
+  background-color: $primary-color !important;
+  border-color: $primary-light;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional):after {
+  content: "*";
+  color: $red-color;
+  font-size: 1.4rem;
+  font-family: SimSun, sans-serif;
+  display: inline-block;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  all: unset;
+}
+
+.ant-select-selector,
+.ant-input {
+  min-height: 5rem;
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.ant-modal-footer {
+  border: none;
+  padding: 1.6em 2.4rem;
+  .btn__modal {
+    padding: 1.6rem 0rem;
+    height: unset;
+    border-radius: 0.5rem;
+  }
+}
+
+@each $key, $value in $spaceMap {
+  @for $i from 0 to 7 {
+    .#{$key}-#{$i} {
+      #{$value}: $i * 10px;
+    }
+  }
+}
+.ant-form-item {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.ant-select-selector {
+  border: 1px solid $primary-color;
+  color: $text-blur;
+  display: flex;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.ant-steps-item-active .ant-steps-item-icon {
+  background-color: $primary-color !important;
+  border-color: $primary-light;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional):after {
+  content: "*";
+  color: $red-color;
+  font-size: 1.4rem;
+  font-family: SimSun, sans-serif;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  all: unset;
+}
+
+.ant-select-selector,
+.ant-input {
+  height: 5rem;
+  align-items: center;
+}
+
+/*
+  reset Input.Password
+*/
+.ant-input-password {
+  padding: 0 10px 0 5px;
+}
+
+/*
+  selection search at create company form
+*/
+.ant-select-selection-search {
+  display: flex;
+  align-items: center;
+}
+
+/*
+  modal profile student
+*/
+.ant-modal-content {
+  label,
+  .ant-modal-title {
+    font-weight: bold;
+  }
+}
